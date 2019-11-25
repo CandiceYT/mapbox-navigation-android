@@ -93,7 +93,7 @@ class OfflineRegionDownloadActivity : AppCompatActivity(), RouteTileDownloadList
         }
 
         override fun onStatusChanged(offlineRegionStatus: OfflineRegionStatus?) {
-            offlineRegionStatus?.let {status->
+            offlineRegionStatus?.let { status ->
                 Timber.d(
                         "%s/%s resources; %s bytes downloaded.",
                         status.completedResourceCount,
